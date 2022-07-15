@@ -16,7 +16,7 @@
               </v-img>
             </v-row>
             <v-row justify="center">
-              <p class="display-1 mt-4">CI確認のために変更した名前</p>
+              <p class="display-1 mt-4">3-4完了</p>
             </v-row>
             <v-row class="">
               <v-col class="col-2"> </v-col>
