@@ -2,6 +2,9 @@
 
 [AWS でポートフォリオサイトのデプロイを自動化してみよう！](https://www.techpit.jp/courses/74)の演習
 
+# デプロイ先
+https://ci-sample.juns-app.com/
+
 ## Project setup
 
 ```
