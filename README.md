@@ -1,31 +1,23 @@
-# ci_vue_amplify_s3
+# markdown エディタに変更
 
-[AWS でポートフォリオサイトのデプロイを自動化してみよう！](https://www.techpit.jp/courses/74)の演習
+[参考](https://qiita.com/watatakahashi/items/097120d3a77ee90695eb)
+[公式 GitHub](https://github.com/hinesboy/mavonEditor)
 
-## Project setup
+# 構成
+
+Vue.js/Amplify/S3
+[AWS でポートフォリオサイトのデプロイを自動化してみよう！](https://www.techpit.jp/courses/74)を参考
+
+# コマンド
+
+## パッケージインストール
 
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+## ローカルサーバー起動
 
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
