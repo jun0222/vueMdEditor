@@ -5,6 +5,12 @@
 
 # 構成
 
+# デプロイ先
+
+https://ci-sample.juns-app.com/
+
+## Project setup
+
 Vue.js/Amplify/S3
 [AWS でポートフォリオサイトのデプロイを自動化してみよう！](https://www.techpit.jp/courses/74)を参考
 
