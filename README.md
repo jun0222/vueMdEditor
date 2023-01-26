@@ -1,7 +1,10 @@
-# markdown エディタに変更
+# 参考記事
 
-[参考](https://qiita.com/watatakahashi/items/097120d3a77ee90695eb)
-[公式 GitHub](https://github.com/hinesboy/mavonEditor)
+markdown エディタに変更するにあたって以下を参考
+
+- [導入紹介 Qiita](https://qiita.com/watatakahashi/items/097120d3a77ee90695eb)
+- [公式 GitHub](https://github.com/hinesboy/mavonEditor)
+- [カスタマイズ関連 Web サイト](https://jamcha-aa.github.io/making-editor/article/01.html)
 
 # 構成
 
