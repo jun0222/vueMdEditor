@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="main">
-      <mavon-editor v-model="value" language="en" font-size="24px" />
+      <mavon-editor v-model="value" language="ja" font-size="24px" />
     </div>
   </div>
 </template>
