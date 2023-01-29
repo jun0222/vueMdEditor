@@ -58,7 +58,7 @@ export default {
         /* 1.3.5 */
         undo: true,
         redo: true,
-        trash: true,
+        trash: false,
         save: true,
         /* 1.4.2 */
         navigation: false,
