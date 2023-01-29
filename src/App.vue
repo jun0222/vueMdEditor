@@ -5,6 +5,7 @@
       v-model="value"
       language="ja"
       :toolbars="toolbars"
+      @save="save"
     ></mavon-editor>
   </div>
 </template>
@@ -70,6 +71,20 @@ export default {
         preview: false,
       },
     };
+  },
+  methods: {
+    save: function () {
+      var blob = new Blob([this.value], { type: "text/plain" });
+      let link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download =
+        (
+          new Date().toLocaleDateString() +
+          "/" +
+          new Date().getSeconds()
+        ).replace(/\//g, "-") + ".md";
+      link.click();
+    },
   },
 };
 </script>
