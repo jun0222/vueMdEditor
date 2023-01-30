@@ -6,6 +6,7 @@
       language="ja"
       :toolbars="toolbars"
       @save="save"
+      font-size="32px"
     ></mavon-editor>
   </div>
 </template>
@@ -37,18 +38,18 @@ export default {
       value: "",
       toolbars: {
         bold: true,
-        italic: true,
+        italic: false,
         header: true,
-        underline: true,
+        underline: false,
         strikethrough: true,
-        mark: true,
-        superscript: true,
-        subscript: true,
+        mark: false,
+        superscript: false,
+        subscript: false,
         quote: true,
-        ol: true,
+        ol: false,
         ul: true,
         link: true,
-        imagelink: true,
+        imagelink: false,
         code: true,
         table: true,
         fullscreen: false,
@@ -63,11 +64,11 @@ export default {
         /* 1.4.2 */
         navigation: false,
         /* 2.1.8 */
-        alignleft: true,
-        aligncenter: true,
-        alignright: true,
+        alignleft: false,
+        aligncenter: false,
+        alignright: false,
         /* 2.2.1 */
-        subfield: false,
+        subfield: true,
         preview: false,
       },
     };
@@ -76,13 +77,13 @@ export default {
     save: function () {
       var blob = new Blob([this.value], { type: "text/plain" });
       let link = document.createElement("a");
+      const now = new Date();
       link.href = window.URL.createObjectURL(blob);
       link.download =
-        (
-          new Date().toLocaleDateString() +
-          "/" +
-          new Date().getSeconds()
-        ).replace(/\//g, "-") + ".md";
+        now.toISOString().slice(0, 10).replace(/-/g, "") +
+        now.getMinutes() +
+        now.getSeconds() +
+        ".md";
       link.click();
     },
   },
