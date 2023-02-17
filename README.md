@@ -10,7 +10,7 @@ markdown エディタに変更するにあたって以下を参考
 
 # デプロイ先
 
-https://ci-sample.juns-app.com/
+https://md.juns-app.com/
 
 ## Project setup
 
