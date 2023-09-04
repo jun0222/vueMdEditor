@@ -73,6 +73,16 @@ export default {
       },
     };
   },
+  mounted() {
+    // ページ読み込み時にローカルストレージからデータを取得
+    this.value = localStorage.getItem("editorContent") || "";
+  },
+  watch: {
+    // value の変更を監視してローカルストレージに保存
+    value(newVal) {
+      localStorage.setItem("editorContent", newVal);
+    },
+  },
   methods: {
     save: function () {
       var blob = new Blob([this.value], { type: "text/plain" });
